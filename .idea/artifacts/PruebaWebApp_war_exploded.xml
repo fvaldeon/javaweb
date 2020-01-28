@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="PruebaWebApp:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/PruebaWebApp_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="PruebaWebApp" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="libs" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="PruebaWebApp/web/Web" />
+      <element id="javaee-facet-resources" facet="PruebaWebApp/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>

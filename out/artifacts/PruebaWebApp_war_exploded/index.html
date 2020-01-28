@@ -1,0 +1,54 @@
+<!--index.html	Lectura de par�metros con formularios + servlets -->
+<!DOCTYPE HTML>
+<HTML>
+  <HEAD>
+	  <meta charset="utf-8">
+	  <TITLE>Param.html</TITLE>
+  </HEAD>
+  <BODY >
+  <P>Formulario HTML que invoca a ParamServlet</P>
+  <H3>Introduce tus datos:</H3><BR>
+    <HR></HR>
+
+	 <FORM NAME="FORM1" METHOD="POST" ACTION="ParamServlet">
+	   <TABLE BORDER>
+		<TR>
+		  <TD>Nombre:</TD>
+		  <TD><INPUT type="text" NAME="NOM" SIZE="25" VALUE=""></TD>
+		</TR>
+		<TR>
+		  <TD>Edad:</TD>
+		  <TD><INPUT type="text" NAME="EDA" SIZE="20" VALUE=""></TD>
+		</TR>
+	   </TABLE>
+	   <P></P>
+	   <INPUT type="submit" VALUE="Enviar">
+
+
+         </FORM>
+    <hr>
+  <h3>Acceso a DataBaseServlet</h3>
+  <form name="form2" method="post" action="DataBaseServlet">
+      <fieldset >
+          <legend>Tipo de consulta</legend>
+          <label for="todosRadio">Todos los usuarios</label>
+          <input id="todosRadio" type="radio" name="tipoConsulta" value="todos" checked><br>
+          <label for="unUsuario">Un usuario</label>
+          <input id="unUsuario" type="radio" name="tipoConsulta" value="uno" ><br>
+          <input type="text" name="nombre" placeholder="Nombre de usuario"><br>
+          <input type="submit" value="Consultar">
+      </fieldset>
+
+  </form>
+  <hr>
+  <h3>Acceso a servlet de variables de sesion(CrearSession)</h3>
+
+  <form name="form3" method="get" action="CrearSession">
+      <input type="submit" value="Sesiones">
+  </form>
+  <br>
+  <a href="CrearSession">Enlace a sesiones</a>
+  <hr>
+  <a href="GimnasioJSP.jsp"><button>Java Server Pages</button></a>
+  </BODY>
+</HTML>
